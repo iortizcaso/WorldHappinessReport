@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>World Happiness Report</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white position-relative">
+        <nav class="navbar w-100 navbar-expand-lg bg-white navbar-light py-3 py-lg-0" style="min-height: 100px;">
+            <a href="index.html" class="navbar-brand text-secondary">
+                <h1 class="display-4 text-uppercase">WORLD HAPPINESS REPORT FROM 2015-2022</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0 pr-3 border-right">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">World Map</a>
+                    <a href="project.html" class="nav-item nav-link">Explore Relationships</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item active">Meet The Team</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex align-items-center pl-4">
+                    <i class="fa fa-2x fa-mobile-alt text-primary mr-3"></i>
+                    <div>
+                        <h6 class="text-body text-uppercase mb-1"><small>DATA 303</small></h6>
+                        <h6 class="m-0">Data Visualization</h6>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-0.5 position-relative" style="margin-bottom: 50px;">
+        <div class="row mx-0 align-items-center" style="min-height: 100vh;">
+          <div class="col-lg-6 px-md-5 text-center text-lg-left">
+            <h1 class="display-2 text-uppercase mb-3" style="margin-top: 30px;">Exploring Factors Influencing a Country's Happiness Score: A Data Analysis Project</h1>
+            <p class="text-dark mb-4" style="margin-bottom: 1em;">In this project, we aimed to explore whether there are particular factors that influence a country's happiness score more than others, and how the data looked at the end of 2020 due to the pandemic. To address this, the project had four main research questions:</p>
+            <div class="ml-4">
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">1. Is there a correlation between the happiness score of a country and its life expectancy in 2020, and whether there are any patterns or clusters in the data? </p>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">2. Is there a relationship between a country's GDP per capita and its happiness score in 2020?</p>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">3. Is there a correlation between perceived government corruption and happiness score for countries in 2020?</p>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">4. How does the happiness scores of various parts of the world compare through the years of the dataset?</p>
+            </div>
+            <p class="text-dark mb-4" style="margin-bottom: 1em;">To answer these research questions, we combined eight years of survey data from separate files into one CSV file to eliminate extraneous variables and find commonalities. The data required significant amount of cleaning and manipulation because it was not collected in the same way for each year. In order to visually see how the top 10 ranks compared over time, we created a unique rank variable for the bump chart in Tableau and analyzed changes over time and rank. 
+            We then moved to the original research questions and analyzed the correlations between individual variables and the happiness score through scatterplots.
+            Throughout our entire process, we found that countries in the Western European region made up a majority of the happiest countries and had longer life expectancies, higher GDP per capita, etc., for all the years analyzed, even during COVID. We figured that these findings could provide valuable insights for policy makers to emulate the characteristics (policies, public health law implementations, access to education) of these countries to increase their country's happiness.</p>
+          </div>
+          <div class="col-lg-6 px-0">
+            <div class="d-flex align-items-center justify-content-end" style="height: 100%;">
+              <img class="img-fluid" src="img/header.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>      
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <h2 class="text-center">About the World Happiness Report Dataset</h2>
+              <p class="text-dark mb-4 mt-4" style="margin-bottom: 1em;">The World Happiness Report is an annual publication that ranks countries by their level of happiness, based on factors such as income, social support, freedom, trust, and life expectancy. The report aims to provide policymakers with information to improve public policies and societal well-being.</p>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">The World Happiness Report dataset, available on Kaggle, contains data from the 2015-2022 editions of the report. It includes information on happiness scores, factors contributing to happiness, and other socio-economic and demographic indicators for 170+ countries. The dataset can be used to analyze trends and patterns in happiness, explore the relationship between happiness and various factors, and compare happiness across countries and regions.</p>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;">This dataset is an excellent resource for researchers, policymakers, and anyone interested in understanding happiness and well-being at a global level. With this dataset, you can perform your analysis, generate insights, and develop data-driven strategies to promote happiness and well-being worldwide.</p>
+              <div class='tableauPlaceholder' id='viz1682975784717' style='position: relative'><noscript><a href='#'><img alt='Bump Chart Rankings ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BumpChartRankings&#47;BumpChartRankings&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BumpChartRankings&#47;BumpChartRankings' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BumpChartRankings&#47;BumpChartRankings&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1682975784717');                    var vizElement = divElement.getElementsByTagName('object')[0];   
+                vizElement.style.width='100%';
+                vizElement.style.height='800px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+              <p class="text-dark mb-4" style="margin-bottom: 1em;"></p>The Bump Chart graph displays the changes over time in the ranking and happiness score of the top 10 happiest countries in 2015. Most of the countries remained within the top 10 ranking throughout the years, with slight variations in their happiness score. However, two countries, Australia and Canada, experienced a decline in both their ranking and happiness score over the past years.
+
+              Based on this observation, we can conclude that while most of the top 10 happiest countries in 2015 have maintained their high levels of happiness, some countries have experienced a decline in their happiness score and ranking. It would be interesting to investigate in future research the reasons behind these changes and whether they are related to internal factors, such as changes in government policies or economic conditions, or external factors, such as global events or changes in international relations.
+            </div>
+          </div>
+        </div>
+      </div>       
+    <!-- About End -->
+    
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-3" style="margin-bottom: .5rem;">Explore Relationships Between Variables in the 2020 Report</h1>
+            <p class="text-center">Hover over each image and click the plus to display additional information!</p>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-12 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-1-LE.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1-LE.jpg" data-lightbox="portfolio" data-title="This scatterplot shows the correlation between the happiness score of a country and its life expectancy for 2020. The data shows a positive linear relationship between the factors on the whole and clustering of the regions as well.">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4 portfolio-item second">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-2-E.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2-E.jpg" data-lightbox="portfolio" data-title="This scatterplot shows the correlation between the happiness score of a country and its GDP per capita for 2020. This plot reveals a positive linear relationship which shows higher GDP per capita is strongly correlated with a higher happiness score.">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4 portfolio-item first">
+                    <div class="position-relative rounded overflow-hidden mb-2">
+                        <img class="img-fluid w-100" src="img/portfolio-3-G.jpg" alt="">
+                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3-G.jpg" data-lightbox="portfolio" data-title="This scatterplot shows the correlation between perceived government corruption and happiness score for 2020. As expected the happiest countries have a lower corruption score, but an interesting trend on this plot is that most of the data points have a government corruption score of .5 or higher regardless of their happiness score. This leads to this plot having more of a cluster than a linear relationship, but there are also some interesting outliers in the data.">
+                                <i class="fa fa-4x fa-plus text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Portfolio End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+          <h1 class="display-4 text-uppercase text-center mb-4">Meet Our Team</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="team-item rounded overflow-hidden mb-4">
+                <div class="position-relative">
+                  <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                  <div class="team-overlay">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                      <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="https://www.linkedin.com/in/isabelaortizcaso/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-light text-center p-3">
+                  <h4 class="text-uppercase mb-0">Isabela Ortiz Caso</h4>
+                  <p class="m-0" style="font-size: 14px;">William & Mary Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="team-item rounded overflow-hidden mb-4">
+                <div class="position-relative">
+                  <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                  <div class="team-overlay">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                      <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="https://www.linkedin.com/in/claire-kolman-a58388259/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-light text-center p-3">
+                  <h4 class="text-uppercase mb-0">Claire Kolman</h4>
+                  <p class="m-0" style="font-size: 14px;">William & Mary Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-3 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-12 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 mt-n2 text-white display-4">World Happiness Report</h1>
+                </a>
+                <p>View the raw data used for this project<a href= https://www.kaggle.com/datasets/mathurinache/world-happiness-report > here</a></p>
+                <p>Mathurin Ache. (2021, January). World Happiness Report, v1. Retrieved May 4, 2023, from https://www.kaggle.com/datasets/mathurinache/world-happiness-report</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="mb-2 text-center text-white-50">&copy; <a href="#">World Happiness Report</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
